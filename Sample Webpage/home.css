@@ -1,0 +1,136 @@
+/* Defaults */
+:root {
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-400: #9ca3af;
+    --gray-500: #6b7280;
+    --gray-600: #4b5563;
+    --gray-900: #111827;
+    --gray-950: #030712;
+
+    --blue-50: #eff6ff;
+    --blue-100: #dbeafe;
+    --blue-400: #60a5fa;
+    --blue-500: #3b82f6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Albert Sans", sans-serif;
+    font-size: 16px;
+    color: var(--gray-900)
+}
+
+body {
+    width: 100%;
+    height: 100hv;
+}
+
+input {
+    border: 0;
+    background-color: transparent;
+}
+input:focus {
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2rem;
+}
+
+/* Classes */
+
+.nav-bar {
+    height: 4rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid var(--gray-300);
+    background-color: var(--gray-50);
+    padding: 0 4rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    background-color: var(--gray-200);
+    padding: 8px 1rem;
+    border-radius: 4px;
+}
+
+/* Hero Section */
+
+.hero-section {
+    width: 100%;
+    height: 68vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14%;
+    
+    position: relative;
+    background: linear-gradient(to bottom, var(--blue-500), var(--blue-50));
+}
+
+.hero-icon-image {
+    object-fit: contain;
+    height: 80%;
+}
+
+.hero-text {
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero-text h2 {
+    color: var(--gray-50)
+}
+
+.hero-text p {
+    color: var(--gray-200);
+}
+
+/* Icon Sizing */
+
+.feather-16 {
+    width: 16px;
+    height: 16px;
+}
